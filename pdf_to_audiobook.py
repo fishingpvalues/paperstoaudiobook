@@ -63,7 +63,8 @@ class PDFToAudiobook:
         if OCR_AVAILABLE:
             print(f"\n⏳ Setting up image reader (for photos and scans)...")
             print(f"   (First time? Downloading reading models - only happens once!)")
-            self.ocr = PaddleOCR(use_angle_cls=True, lang='en', use_gpu=False, show_log=False)
+            # PaddleOCR defaults to CPU mode, just specify language
+            self.ocr = PaddleOCR(lang='en')
             print(f"✓ Image reader ready!")
         else:
             self.ocr = None
@@ -144,15 +145,24 @@ class PDFToAudiobook:
             with tqdm(total=len(images), desc="   Scanning pages",
                      bar_format='{desc}: {percentage:3.0f}%|{bar}| {n_fmt}/{total_fmt} pages',
                      ncols=80) as pbar:
-                for image in images:
-                    # Convert PIL image to numpy array for PaddleOCR
-                    img_array = np.array(image)
-                    result = self.ocr.ocr(img_array, cls=True)
+                for i, image in enumerate(images):
+                    # Save temp image for PaddleOCR
+                    temp_path = f"temp_page_{i}.png"
+                    image.save(temp_path)
 
-                    # Extract text from OCR result
-                    if result and result[0]:
-                        page_text = '\n'.join([line[1][0] for line in result[0]])
-                        text += f"\n\n{page_text}"
+                    try:
+                        result = self.ocr.predict(temp_path)
+
+                        # Extract text from OCR result (new PaddleOCR API format)
+                        if result and 'text_recognition' in result:
+                            texts = result['text_recognition'].get('text', [])
+                            if texts:
+                                page_text = '\n'.join(texts)
+                                text += f"\n\n{page_text}"
+                    finally:
+                        # Clean up temp file
+                        if os.path.exists(temp_path):
+                            os.remove(temp_path)
 
                     pbar.update(1)
 
@@ -182,17 +192,18 @@ class PDFToAudiobook:
 
         try:
             print(f"   Reading text from image...")
-            # Load image
-            image = Image.open(image_path)
-            img_array = np.array(image)
+            # PaddleOCR can work with file path directly
+            result = self.ocr.predict(str(image_path))
 
-            # Perform OCR
-            result = self.ocr.ocr(img_array, cls=True)
-
-            # Extract text from OCR result
-            if result and result[0]:
-                text = '\n'.join([line[1][0] for line in result[0]])
-                print(f"   ✓ Text extracted from image!")
+            # Extract text from OCR result (new PaddleOCR API format)
+            if result and 'text_recognition' in result:
+                texts = result['text_recognition'].get('text', [])
+                if texts:
+                    text = '\n'.join(texts)
+                    print(f"   ✓ Text extracted from image!")
+                else:
+                    print(f"   ⚠️  No text found in this image")
+                    return None
             else:
                 print(f"   ⚠️  No text found in this image")
                 return None
