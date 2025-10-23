@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(pip show:*)",
+      "Bash(python:*)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "Bash(pip install:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: Complete PDF to Audiobook converter with image support\n\nFeatures:\n- PDF to audiobook conversion using Kokoro-82M TTS\n- Image to audiobook conversion using PaddleOCR\n- CPU-only processing (no GPU required)\n- Batch processing support\n- High-quality MP3 output\n- Progress tracking with tqdm\n\nTechnical stack:\n- PyPDF2 for PDF text extraction\n- PaddleOCR for image/scanned document OCR\n- Kokoro-82M for natural audiobook narration\n- pydub for audio processing\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

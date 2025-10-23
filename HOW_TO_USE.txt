@@ -1,0 +1,95 @@
+===============================================================================
+                    PDF TO AUDIOBOOK CONVERTER
+                     Simple Guide for Everyone
+===============================================================================
+
+WHAT DOES THIS DO?
+------------------
+This program turns your PDF documents into audiobooks (MP3 files) that you
+can listen to on your phone, computer, or any audio player. Perfect for:
+- Study materials you want to listen to while driving
+- Long articles or papers
+- Any PDF you'd rather listen to than read
+
+
+HOW TO USE IT (SUPER SIMPLE!)
+------------------------------
+
+STEP 1: Put your PDFs in the "input" folder
+   - Look for a folder called "input" (it's in the same place as this file)
+   - Copy or drag your PDF files into that folder
+   - You can add as many PDFs as you want!
+
+STEP 2: Run the converter
+   - Double-click the file called "pdf_to_audiobook.py"
+   - OR open a terminal/command prompt and type: python pdf_to_audiobook.py
+   - The program will show you progress bars so you know it's working!
+
+STEP 3: Get your audiobooks!
+   - When it's done, look in the "output" folder
+   - Your audiobooks will be there as MP3 files
+   - They have the same name as your PDFs but end in .mp3
+
+
+WHAT YOU'LL SEE WHILE IT WORKS
+-------------------------------
+The program shows friendly progress bars like this:
+   Reading pages: 75%|████████████     | 15/20 pages
+   Creating audio: 50%|██████           | 50/100 segments
+
+First time? It might download some files (voice data) - this only happens once!
+
+
+HOW LONG DOES IT TAKE?
+-----------------------
+- Reading the PDF: Usually very fast (seconds)
+- Creating audio: About 2-3 minutes per 1000 words
+- Longer documents = more time (grab a coffee!)
+
+
+TROUBLESHOOTING
+---------------
+Q: "No PDF files found!"
+A: Make sure your PDFs are in the "input" folder, not in any subfolders.
+
+Q: It's taking forever!
+A: This is normal! Audio generation takes time. You'll see a progress bar.
+   A 20-page document might take 5-10 minutes.
+
+Q: The audio is cut off or weird
+A: Your PDF might have images or special formatting. The program works best
+   with PDFs that have regular text (like books or articles).
+
+Q: I got an error message
+A: Try these:
+   1. Make sure the PDF isn't password-protected
+   2. Check that the PDF has actual text (not just scanned images)
+   3. Try a different PDF to see if it works
+
+
+TIPS FOR BEST RESULTS
+----------------------
+✓ Works best with text-based PDFs (books, articles, papers)
+✓ Make sure PDFs aren't password-protected
+✓ Longer PDFs take longer - be patient!
+✓ The audio quality is very natural and pleasant to listen to
+
+
+TECHNICAL DETAILS (for the curious)
+------------------------------------
+- Uses Kokoro TTS for natural-sounding speech
+- Female voice (af_bella) - clear and easy to understand
+- 128kbps MP3 quality - great sound, reasonable file size
+- Works entirely on your computer - no internet needed (after initial setup)
+- CPU-only processing - no fancy graphics card required
+
+
+NEED HELP?
+----------
+If you're stuck or something doesn't work, check the error messages.
+They usually tell you what went wrong in plain English!
+
+
+===============================================================================
+                         Happy Listening! 🎧
+===============================================================================

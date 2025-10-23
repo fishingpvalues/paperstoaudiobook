@@ -1,0 +1,56 @@
+================================================================================
+                   PDF TO AUDIOBOOK - QUICK START GUIDE
+================================================================================
+
+FOR YOUR SISTER - SUPER EASY TO USE!
+
+STEP 1: INSTALL (First time only)
+----------------------------------
+1. Make sure Python is installed (python.org)
+2. Open terminal/command prompt in this folder
+3. Run: pip install -r requirements.txt
+
+   OR just double-click: run.bat (Windows) or run.sh (Mac/Linux)
+   It will install everything automatically!
+
+
+STEP 2: ADD YOUR PDFs
+----------------------
+1. Open the "input" folder
+2. Copy/paste your PDF study materials into it
+3. That's it!
+
+
+STEP 3: CONVERT TO AUDIOBOOKS
+------------------------------
+Double-click: run.bat (Windows) or run.sh (Mac/Linux)
+
+OR in terminal, run: python pdf_to_audiobook.py
+
+
+STEP 4: GET YOUR AUDIOBOOKS
+----------------------------
+1. Open the "output" folder
+2. Your MP3 audiobooks are ready!
+3. Copy to your phone, tablet, or listen on computer
+
+
+================================================================================
+                              THAT'S IT!
+================================================================================
+
+TIPS:
+- One PDF = One MP3 audiobook
+- Works with most scientific papers and study materials
+- Voice is natural and pleasant for long listening
+- Completely runs on your computer (no internet needed after setup)
+- Processes multiple PDFs at once
+
+TROUBLESHOOTING:
+- If text sounds weird, your PDF might be scanned images
+- Install Tesseract OCR for scanned PDFs (see README.md)
+- Try one PDF first to test
+
+================================================================================
+
+Questions? Check README.md for detailed instructions!
