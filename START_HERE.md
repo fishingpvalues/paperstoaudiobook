@@ -1,17 +1,17 @@
-# 🎧 START HERE - PDF to Audiobook Converter
+# START HERE - PDF to Audiobook Converter
 
 ## What You Got
 
 A **complete, production-ready** PDF to audiobook converter that:
-- ✅ Runs entirely on CPU (no GPU needed)
-- ✅ Works offline (no internet after setup)
-- ✅ Uses audiobook-quality voice (Kokoro-82M)
-- ✅ Is super easy for your sister to use
-- ✅ Processes scientific papers perfectly
+-  Runs entirely on CPU (no GPU needed)
+-  Works offline (no internet after setup)
+-  Uses audiobook-quality voice (Kokoro-82M)
+-  Is super easy for your sister to use
+-  Processes scientific papers perfectly
 
 ---
 
-## 🚀 For Your Sister - 3 Simple Steps
+## For Your Sister - 3 Simple Steps
 
 ### Step 1: Setup (First Time Only)
 ```bash
@@ -30,42 +30,42 @@ Double-click `run.bat` or `run.sh` (or run `python pdf_to_audiobook.py`)
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
-studytoaudiobook/
+paperstoaudiobook/
 │
-├── 📄 START_HERE.md              ← YOU ARE HERE
-├── 📄 QUICK_START.txt            ← Sister-friendly instructions
-├── 📄 README.md                  ← Full documentation
-├── 📄 TECHNICAL_DECISIONS.md     ← Why I chose this approach
+├──  START_HERE.md              ← YOU ARE HERE
+├──  QUICK_START.txt            ← Sister-friendly instructions
+├──  README.md                  ← Full documentation
+├──  TECHNICAL_DECISIONS.md     ← Why I chose this approach
 │
-├── 🐍 pdf_to_audiobook.py        ← Main script (everything in one file)
-├── 📋 requirements.txt           ← Python dependencies
+├──  pdf_to_audiobook.py        ← Main script (everything in one file)
+├──  requirements.txt           ← Python dependencies
 │
-├── ▶️  run.bat                   ← Windows launcher
-├── ▶️  run.sh                    ← Mac/Linux launcher
+├── ▶  run.bat                   ← Windows launcher
+├── ▶  run.sh                    ← Mac/Linux launcher
 │
-├── 📂 input/                     ← PUT PDF FILES HERE
+├──  input/                     ← PUT PDF FILES HERE
 │   └── README_PUT_PDFS_HERE.txt
 │
-└── 📂 output/                    ← AUDIOBOOKS APPEAR HERE
+└──  output/                    ← AUDIOBOOKS APPEAR HERE
     └── README_AUDIOBOOKS_APPEAR_HERE.txt
 ```
 
 ---
 
-## 🎯 My Technical Decisions
+## My Technical Decisions
 
-### 1. **TTS Model: Kokoro-82M** (Winner! 🏆)
+### 1. **TTS Model: Kokoro-82M** (Winner! )
 
 I tested and researched these models:
-- ❌ MeloTTS - Generic TTS, robotic for long listening
-- ❌ Chatterbox - Needs GPU for quality
-- ❌ F5-TTS - Way too slow on CPU
-- ❌ XTTS-v2 - Huge model, overkill
-- ❌ DeepSeek Voice - Not designed for audiobooks
-- ✅ **Kokoro-82M** - PERFECT for this use case!
+-  MeloTTS - Generic TTS, robotic for long listening
+-  Chatterbox - Needs GPU for quality
+-  F5-TTS - Way too slow on CPU
+-  XTTS-v2 - Huge model, overkill
+-  DeepSeek Voice - Not designed for audiobooks
+-  **Kokoro-82M** - PERFECT for this use case!
 
 **Why Kokoro is THE BEST:**
 - Specifically trained for **audiobook narration**
@@ -77,10 +77,10 @@ I tested and researched these models:
 
 ### 2. **PDF Parsing: Direct Text Extraction** (not OCR)
 
-- ✅ 95% of PDFs have embedded text → instant extraction
-- ✅ Super fast (seconds vs minutes)
-- ❌ DeepSeek-OCR rejected: Needs GPU, flash-attention, overkill
-- ✅ Fallback: pytesseract OCR for scanned PDFs (optional)
+-  95% of PDFs have embedded text → instant extraction
+-  Super fast (seconds vs minutes)
+-  DeepSeek-OCR rejected: Needs GPU, flash-attention, overkill
+-  Fallback: pytesseract OCR for scanned PDFs (optional)
 
 ### 3. **Architecture: Simple Folders**
 
@@ -91,7 +91,7 @@ I tested and researched these models:
 
 ---
 
-## 🔬 How It Works
+## How It Works
 
 ```
 PDF File
@@ -113,7 +113,7 @@ MP3 Audiobook (ready to listen!)
 
 ---
 
-## 📊 Performance
+## Performance
 
 **Example: 20-page scientific paper**
 - Text extraction: 3 seconds
@@ -129,12 +129,12 @@ MP3 Audiobook (ready to listen!)
 
 ---
 
-## 🎤 Voice Quality
+## Voice Quality
 
 **Voice used**: `af_bella` (clear female voice)
 
 **Other voices available** (edit in code):
-- `af_bella` - Clear female (default) ⭐ Best for audiobooks
+- `af_bella` - Clear female (default)  Best for audiobooks
 - `af_sarah` - Alternative female
 - `am_adam` - Male voice
 - `am_michael` - Alternative male
@@ -147,7 +147,7 @@ MP3 Audiobook (ready to listen!)
 
 ---
 
-## 🛠️ Installation Details
+## Installation Details
 
 ### Required (always):
 ```bash
@@ -166,18 +166,18 @@ Plus install Tesseract OCR on your system:
 
 ---
 
-## 🎓 Perfect For
+## Perfect For
 
-- 📚 Study materials for exams
-- 🔬 Scientific papers and research
-- 📖 Academic articles
-- 📝 Technical documentation
-- 🎯 Long-form reading materials
-- 🧠 Listening while commuting/exercising
+-  Study materials for exams
+-  Scientific papers and research
+-  Academic articles
+-  Technical documentation
+-  Long-form reading materials
+-  Listening while commuting/exercising
 
 ---
 
-## 💡 Pro Tips
+## Pro Tips
 
 1. **Test first**: Try with one PDF before batch processing
 2. **File names**: Keep them descriptive - they become MP3 names
@@ -188,7 +188,7 @@ Plus install Tesseract OCR on your system:
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### "No PDF files found"
 → Make sure PDFs are in the `input` folder
@@ -207,7 +207,7 @@ Plus install Tesseract OCR on your system:
 
 ---
 
-## 📚 Documentation Files
+## Documentation Files
 
 - **QUICK_START.txt** - Simplest instructions for your sister
 - **README.md** - Complete documentation with all details
@@ -216,32 +216,32 @@ Plus install Tesseract OCR on your system:
 
 ---
 
-## 🔒 Privacy & Security
+## Privacy & Security
 
-- ✅ Everything runs **locally** on your computer
-- ✅ No cloud services or API calls
-- ✅ No data sent anywhere
-- ✅ Your study materials stay private
-- ✅ Works completely offline (after setup)
+-  Everything runs **locally** on your computer
+-  No cloud services or API calls
+-  No data sent anywhere
+-  Your study materials stay private
+-  Works completely offline (after setup)
 
 ---
 
-## 🎯 Why This Solution Beats Alternatives
+## Why This Solution Beats Alternatives
 
 | Feature | This Project | Cloud TTS | Other Local TTS |
 |---------|--------------|-----------|-----------------|
-| **Quality** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ |
-| **Speed** | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐ |
-| **CPU-only** | ✅ Yes | ✅ Yes | ⚠️ Mixed |
-| **Offline** | ✅ Yes | ❌ No | ✅ Yes |
-| **Free** | ✅ Yes | ⚠️ Limited | ✅ Yes |
-| **Privacy** | ✅ Full | ❌ No | ✅ Full |
-| **Easy setup** | ✅ Yes | ✅ Yes | ⚠️ Mixed |
-| **Audiobook voice** | ✅ Yes | ⚠️ Generic | ❌ No |
+| **Quality** |  |  |  |
+| **Speed** |  |  |  |
+| **CPU-only** |  Yes |  Yes |  Mixed |
+| **Offline** |  Yes |  No |  Yes |
+| **Free** |  Yes |  Limited |  Yes |
+| **Privacy** |  Full |  No |  Full |
+| **Easy setup** |  Yes |  Yes |  Mixed |
+| **Audiobook voice** |  Yes |  Generic |  No |
 
 ---
 
-## 🎉 You're All Set!
+## You're All Set!
 
 The project is **complete and ready to use**. Your sister can:
 
@@ -250,11 +250,11 @@ The project is **complete and ready to use**. Your sister can:
 3. Run the converter
 4. Get audiobooks in `output` folder
 
-**That's it! Super simple.** 🎧
+**That's it! Super simple.** 
 
 ---
 
-## 🔮 Future Enhancements (Optional)
+## Future Enhancements (Optional)
 
 If your sister wants more features later:
 - [ ] GUI with drag-and-drop
@@ -269,7 +269,7 @@ But for now: **Simple is perfect!**
 
 ---
 
-## 📞 Questions?
+## Questions?
 
 Check these files in order:
 1. `QUICK_START.txt` - Fastest instructions
@@ -278,6 +278,6 @@ Check these files in order:
 
 ---
 
-**Enjoy your audiobooks!** 🎧📚
+**Enjoy your audiobooks!** 
 
-Made with 💙 for easy studying
+Made with  for easy studying

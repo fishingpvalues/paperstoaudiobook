@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.claude/settings.local.json
+input/*
+!input/README_PUT_PDFS_HERE.txt
+output/*
+!output/README_AUDIOBOOKS_APPEAR_HERE.txt

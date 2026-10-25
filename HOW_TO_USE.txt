@@ -69,10 +69,10 @@ A: Try these:
 
 TIPS FOR BEST RESULTS
 ----------------------
-✓ Works best with text-based PDFs (books, articles, papers)
-✓ Make sure PDFs aren't password-protected
-✓ Longer PDFs take longer - be patient!
-✓ The audio quality is very natural and pleasant to listen to
+ Works best with text-based PDFs (books, articles, papers)
+ Make sure PDFs aren't password-protected
+ Longer PDFs take longer - be patient!
+ The audio quality is very natural and pleasant to listen to
 
 
 TECHNICAL DETAILS (for the curious)
@@ -91,5 +91,5 @@ They usually tell you what went wrong in plain English!
 
 
 ===============================================================================
-                         Happy Listening! 🎧
+                         Happy Listening! 
 ===============================================================================
